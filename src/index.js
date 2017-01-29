@@ -5,6 +5,9 @@ import './index.css';
 import { createStore } from "redux";
 import rootReducer from "./rootReducer";
 import { Provider } from "react-redux";
+import { Router, Route,browserHistory } from 'react-router';
+import Main from "./components/Main";
+import Login from "./components/Login";
 
 const store = createStore(
   rootReducer
@@ -12,7 +15,12 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router history={browserHistory}>
+      <Route path="/" component={Main}>
+        <Route path="process" component={App}/>
+        <Route path="login" component={Login}/>
+      </Route>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );
