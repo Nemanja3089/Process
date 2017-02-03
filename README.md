@@ -4,7 +4,7 @@
 - [x] Include react router
 
 ### Create process component
-- [ ] Add process component with more details. ATM it only { name: "example" }. Process will have more information i.e:
+- [x] Add process component with more details. ATM it only { name: "example" }. Process will have more information i.e:
 ```
 {
   name: "Item delivery"
@@ -946,7 +946,7 @@ This feature is experimental and still [has major usage issues](https://github.c
 
 ### Editor Integration
 
-If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates. 
+If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates.
 
 ![VS Code Jest Preview](https://cloud.githubusercontent.com/assets/49038/20795349/a032308a-b7c8-11e6-9b34-7eeac781003f.png)
 
