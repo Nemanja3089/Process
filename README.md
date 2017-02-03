@@ -1,3 +1,38 @@
+## Tasks/Stories
+
+### Include react router package
+- [x] Include react router
+
+### Create process component
+- [ ] Add process component with more details. ATM it only { name: "example" }. Process will have more information i.e:
+```
+{
+  name: "Item delivery"
+  description: 'This process is used for delivering items to customers'
+  startAction: 'Package item'
+  actions: [
+    {
+      name: 'Package item',
+      type: 'TASK'
+      nextAction: 'Send email to customer',
+      roles: 'packager'
+    },
+    {
+      name: 'Send email to customer',
+      type: 'TASK',
+      nextAction: 'send,
+      roles: 'sails'
+    },
+    {
+      name: 'Transport item',
+      type: 'TASK',
+      roles: 'delivery'
+    }
+  ]
+```
+This is example process, you can use it instead of the current stub which is only `{name: 'example'}`, component can look similar to the component from buzzler.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
